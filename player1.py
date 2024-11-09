@@ -1,5 +1,6 @@
 from flask import Flask, request, jsonify
 from PushBattle import Game, PLAYER1, PLAYER2, EMPTY, BOARD_SIZE, NUM_PIECES, _torus
+from best_move import Minimax
 
 # Import This
 # from <AGENT FILENAME> import <AGENT CLASSNAME>
@@ -32,7 +33,7 @@ def start_game():
 
     ##### MODIFY BELOW #####
 
-    # agent = RandomAgent()
+    agent = Minimax()
 
     ###################
     
@@ -73,10 +74,7 @@ def make_move():
     
     ##### MODIFY BELOW #####
 
-    # Move logic should go here
-    # This is where you'd call your minimax/MCTS/neural network/etc
-
-    # move = agent.get_best_move(game)
+    move = agent.get_best_move(game, board, PLAYER1)
 
     ###################
     
