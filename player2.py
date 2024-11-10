@@ -35,7 +35,7 @@ def start_game():
 
     ##### MODIFY BELOW #####
 
-    agent = RandomAgent()
+    agent = Minimax()
 
     ###################
     
