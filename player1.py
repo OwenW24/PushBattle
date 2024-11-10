@@ -5,6 +5,7 @@ from best_move import Minimax
 # Import This
 from random_agent import RandomAgent
 # from <AGENT FILENAME> import <AGENT CLASSNAME>
+from owens_agent import OwensAgent
 
 app = Flask(__name__)
 
@@ -34,7 +35,7 @@ def start_game():
 
     ##### MODIFY BELOW #####
 
-    agent = Minimax()
+    # agent = RandomAgent()
 
     ###################
     
@@ -75,7 +76,10 @@ def make_move():
     
     ##### MODIFY BELOW #####
 
-    move = agent.get_best_move(game)
+    # Move logic should go here
+    # This is where you'd call your minimax/MCTS/neural network/etc
+
+    # move = agent.get_best_move(game)
 
     ###################
     
