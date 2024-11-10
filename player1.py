@@ -1,11 +1,11 @@
 from flask import Flask, request, jsonify
 from PushBattle import Game, PLAYER1, PLAYER2, EMPTY, BOARD_SIZE, NUM_PIECES, _torus
-from best_move import Minimax
+
 
 # Import This
-from random_agent import RandomAgent
 # from <AGENT FILENAME> import <AGENT CLASSNAME>
-from owens_agent import OwensAgent
+
+from DT24_agent import DT24Agent
 
 app = Flask(__name__)
 
@@ -35,7 +35,7 @@ def start_game():
 
     ##### MODIFY BELOW #####
 
-    agent = Minimax()
+    agent = DT24Agent()
 
     ###################
     
