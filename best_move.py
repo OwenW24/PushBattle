@@ -22,14 +22,15 @@ class Minimax:
         if (not isMovement):
             for i in range(8):
                 for j in range(8):
-                    if game.is_valid_placement(i, j):
+                    if (game.is_valid_placement(i, j)):
                         p1_pieces = game.p1_pieces
                         p2_pieces = game.p2_pieces
+
                         scoreOfMove = self.minimax_placement(game, i, j, 5, float('-inf'), float('inf'), player, player)
 
                         game.p1_pieces = p1_pieces
                         game.p2_pieces = p2_pieces
-                        # print("testing", i, j, ":", scoreOfMove)
+                        print("testing", i, j, ":", scoreOfMove)
                         if (scoreOfMove > bestScore):
                             bestScore = scoreOfMove
                             bestRow = i
