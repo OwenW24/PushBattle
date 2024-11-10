@@ -35,7 +35,7 @@ def start_game():
 
     ##### MODIFY BELOW #####
 
-    # agent = RandomAgent()
+    agent = Minimax()
 
     ###################
     
@@ -79,7 +79,7 @@ def make_move():
     # Move logic should go here
     # This is where you'd call your minimax/MCTS/neural network/etc
 
-    # move = agent.get_best_move(game)
+    move = agent.get_best_move(game)
 
     ###################
     
