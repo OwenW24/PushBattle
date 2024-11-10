@@ -300,3 +300,4 @@ class OwensAgent:
                             if game.board[r3][c3] == self.player:
                                 return True
         return False
+
