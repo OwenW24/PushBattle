@@ -4,7 +4,7 @@ import numpy as np
 from collections import defaultdict
 from PushBattle import Game, PLAYER1, PLAYER2, EMPTY, BOARD_SIZE, NUM_PIECES, _torus
 
-class OwensAgent:
+class DT24Agent:
     def __init__(self, player=PLAYER1):
         # Using a basic q-learning algorithm and vars for the code
         self.player = player
