@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-from best_move import Minimax
+from DT24_agent import DT24Agent
 from PushBattle import Game, PLAYER1, PLAYER2, EMPTY, BOARD_SIZE, NUM_PIECES, _torus
 
 # This simulates player 2 always playing random moves - you may modify to test locally
@@ -35,7 +35,7 @@ def start_game():
 
     ##### MODIFY BELOW #####
 
-    agent = RandomAgent()
+    agent = DT24Agent()
 
     ###################
     
